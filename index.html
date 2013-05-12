@@ -7,28 +7,60 @@
     </head>
 
     <body>
-        <div class="container">
-            <div class="row">
-                <div class="span2">
-                    <p>Hi.</p>
-                </div>
-                <div class="span2">
-                    <p>Hi.</p>
-                </div>
-                <div class="span2">
-                    <p>Hi.</p>
-                </div>
-                <div class="span2">
-                    <p>Hi.</p>
-                </div>
-                <div class="span2">
-                    <p>Hi.</p>
-                </div>
-                <div class="span2">
-                    <p>Hi.</p>
-                </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="span2">
+                <span class="rotate" 
+                      data-delay="500"
+                        data-lines="hi,my,name,is,robert,florance">.</span>
+            </div>
+            <div class="span2">
+                <span class="rotate" 
+                      data-delay="1000"
+                        data-lines="my,name,is,robert,florance,hi">.</span>
+            </div>
+            <div class="span2">
+                <span class="rotate" 
+                      data-delay="1500"
+                        data-lines="name,is,robert,florance,hi,my">.</span>
+            </div>
+            <div class="span2">
+                <span class="rotate" 
+                      data-delay="2000"
+                        data-lines="is,robert,florance,hi,my,name">.</span>
+            </div>
+            <div class="span2">
+                <span class="rotate" 
+                      data-delay="2500"
+                        data-lines="robert,florance,hi,my,name,is">.</span>
+            </div>
+            <div class="span2">
+                <span class="rotate" 
+                      data-delay="3000"
+                        data-lines="florance,hi,my,name,is,robert">.</span>
             </div>
         </div>
+        <div class="row">
+            <div>
+                <img src="img/signature.jpg" alt="my signature">
+            </div>
+            <div class="test">
+            </div>
+        </div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dynamo.min.js"></script>
+
+    <script src="js/index.js"></script>
+    
+    <script type="text/javascript">
+        $(function() {
+            $(".rotate").dynamo();
+        });
+    </script>
     </body>
 
 </html>
